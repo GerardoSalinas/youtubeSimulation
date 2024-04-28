@@ -4,3 +4,19 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
+
+.h-33 {
+	height: 32%;
+}
+
+.h-90{
+	height: 90%;
+}
+
+.h-10 {
+	height: 10%;
+}
+
+.size{
+	font-size: 20px;
+}
