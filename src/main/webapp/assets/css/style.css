@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/*
+ * gasalinas@unah.hn
+*/
 body {
 	width: 100vw;
 	height: 100vh;
@@ -16,6 +18,16 @@ body {
 .h-10 {
 	height: 10%;
 }
+
+#floatingTextarea{
+	max-height: 340px;
+}
+
+
+
+
+
+
 
 .size{
 	font-size: 20px;
