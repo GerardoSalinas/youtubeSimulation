@@ -5,7 +5,7 @@
 class Validator{
 	static validEmail(email){
 		let regex = new RegExp(Configuration.EMAIL_REGEXP, "g");
-		if (email.match(regex)){
+		if (email.trim().match(regex)){
 			return true;
 		}
 		return false;
@@ -13,10 +13,11 @@ class Validator{
 	
 	static validChannel(channel){
 		let regex = new RegExp(Configuration.CHANNEL_REGEXP, "g");
-		if (email.match(regex)){
+		if (channel.trim().match(regex)){
 			return true;
 		}
 		return false;
+		
 	}
 	
 	static validDescription(description){
@@ -29,12 +30,13 @@ class Validator{
 	}
 	
 	static validiFrame(iFrame){
-		/*
-		if iFrame matches a specific regular expression
-			return true
-		otherwise 
-		return false
-		*/
+		//falta completar esta expresion regular
+		//^<iframe\swidth=\"\"\sheight=\"\"\ssrc=\"https:\/\/www.youtube.com\/embed\/\"\stitle=\"\"\sframeborder=\"\d*\"\sallow=\"\"><\/iframe>$
+		let regex = new RegExp(Configuration.IFRAME_REGEXP, "g");
+		if (iFrame.trim().match(regex)){
+			return true;
+		}
+		return false;
 	}
 	
 }
